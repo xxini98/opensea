@@ -12,34 +12,24 @@ const Gnb = () => {
       <ul>
         <li className={location.pathname === "/" ? "active" : ""}>
           <Link to="/">
-            <AiFillHome /> Dashboard
+            <AiFillHome /> Home
           </Link>
         </li>
-        <li className={location.pathname === "/marketplace" ? "active" : ""}>
-          <Link to="/marketplace">
+        <li className={location.pathname === "/drops" ? "active" : ""}>
+          <Link to="/Drops">
             <AiOutlineShoppingCart />
-            NFT Marketplace
+            Drops
           </Link>
         </li>
-        <li className={location.pathname === "/tables" ? "active" : ""}>
-          <Link to="/tables">
+        <li className={location.pathname === "/stats" ? "active" : ""}>
+          <Link to="/Stats">
             <BsBarChartFill />
-            Tables
+            Stats
           </Link>
         </li>
-        <li className={location.pathname === "/kanban" ? "active" : ""}>
-          <Link to="/kanban">
-            <BsBarChartFill /> Kanban
-          </Link>
-        </li>
-        <li className={location.pathname === "/profile" ? "active" : ""}>
-          <Link to="/profile">
-            <BsBarChartFill /> Profile
-          </Link>
-        </li>
-        <li className={location.pathname === "/signin" ? "active" : ""}>
-          <Link to="/signin">
-            <BsBarChartFill /> Sign in
+        <li className={location.pathname === "/create" ? "active" : ""}>
+          <Link to="/Create">
+            <BsBarChartFill /> Create
           </Link>
         </li>
       </ul>
